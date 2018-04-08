@@ -7,7 +7,7 @@ RUN apt-get update &&\
   apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /factorio
-RUN curl -L -k https://www.factorio.com/get-download/0.15.37/headless/linux64 | tar --strip-components=1 -xJf -
+RUN curl -L -k https://www.factorio.com/get-download/latest/headless/linux64 | tar --strip-components=1 -xJf -
 
 VOLUME ["/factorio/saves"]
 VOLUME ["/factorio/mods"]
